@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='sampleApp'>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    Test : {{3+4}}
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3">
+        <ul class="nav">
+            <li><a href="#AddNewOrder"> Add New Order </a></li>
+            <li><a href="#ShowOrders"> Show Order </a></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <div ng-view=""></div>
+    </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="/javascripts/app.js"></script>
+
+  </body>
+</html>
